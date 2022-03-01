@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="574" maxWidth="589" minHeight="-574" minWidth="-589" spacing="20.0"
+      xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4_systemsdevint.HelloController">
+    <padding>
+        <Insets bottom="200.0" left="200.0" right="200.0" top="200.0" />
+    </padding>
+   <Label text="Username:" translateX="-226.0" translateY="43.0" />
+   <TextField fx:id="Username" onAction="#onHelloButtonClick" promptText="Username: " translateX="-71.0" />
+   <Label text="Password: " translateX="-226.0" translateY="22.0" />
+   <PasswordField fx:id="Password" onAction="#onHelloButtonClick" promptText="Enter Password" translateX="-71.0" translateY="-21.0" />
+   <Label text="Full Name: " translateX="-224.0" />
+   <TextField fx:id="full_name" onAction="#onHelloButtonClick" promptText="Full Name" translateX="-71.0" translateY="-41.0" />
+   <TextField fx:id="email" onAction="#onHelloButtonClick" promptText="Email" translateX="-71.0" translateY="-30.0" />
+   <Label centerShape="false" focusTraversable="true" text="Email: " translateX="-236.0" translateY="-70.0" />
+   <Label fx:id="welcomeText1" alignment="TOP_LEFT" text="Phone #:" translateX="-231.0" translateY="-48.0" />
+   <TextField fx:id="phonenumber" alignment="TOP_LEFT" onAction="#onHelloButtonClick" promptText="Phone #" translateX="-71.0" translateY="-89.0" />
+   <DatePicker fx:id="dob" onAction="#onHelloButtonClick" translateX="-71.0" translateY="-74.0" />
+
+    <Label fx:id="welcomeText" alignment="TOP_LEFT" text="Date of Birth:" translateX="-219.0" translateY="-116.0" />
+    <Button onAction="#onHelloButtonClick" text="Submit!" translateX="-13.0" translateY="-51.0" />
+</VBox>
